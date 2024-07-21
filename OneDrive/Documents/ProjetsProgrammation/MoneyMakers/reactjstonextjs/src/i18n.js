@@ -16,7 +16,7 @@ i18n
       caches: ['cookie']
     },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json' // Update path if necessary
+      loadPath: '/assets/locales/{{lng}}/translation.json' // Update path if necessary
     },
     interpolation: {
       escapeValue: false // React already safe from XSS
