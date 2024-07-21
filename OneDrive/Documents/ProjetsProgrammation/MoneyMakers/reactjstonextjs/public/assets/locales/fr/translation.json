@@ -1,0 +1,150 @@
+{
+    "pages" : {
+        "homepage" : {
+            "title" : "Notion made easy | Modèles Notion de productivité",
+            "description" : "Notion est la solution clé-en-main pour la gestion de tâches et de prise de notes. Structurez votre vie grâce à nos modèles à l'aide de calendriers & rappels."
+        },
+        "templates" : {
+            "title" : "Notion made easy | Galerie de Modèles Notion",
+            "description" : "Vous aimez Notion, mais n'avez pas le temps ou l'énergie de créer un espace de travail de A à Z? Essayez nos modèles pour votre vie personnelle et scolaire."
+        },
+        "about" : {
+            "title": "Notion made easy | À propos",
+            "description" : "Contactez-nous pour des questions ou quelconque demande de fonctionallité."
+        },
+        "privacy" : {
+            "title": "Notion made easy | Politique de confidentialité",
+            "description" : "Chez Notion Made Easy, nous donnons à ceux en recherche de productivité les moyens d'utiliser des outils efficaces et facile d'utilisation."
+        }
+    },
+    "header" : {
+        "home" : "Accueil",
+        "templates" : "Modèles",
+        "blog" : "Blog",
+        "about" : "À propos",
+        "learn_notion" : "Apprendre Notion"
+    },
+    "homepage" : {
+        "introduction" : {
+            "title" : "Devenez productif",
+            "subtitle" : "Organisez votre vie professionnelle et personnelle à l'aide de Notion",
+            "CTA_templates" : "Modèles Notion",
+            "CTA_work_with_us" : "Contactez-nous",
+            "trusted_by" : "Notion est utilisé par les équipes les plus productives au monde"
+        }
+    },
+    "FAQ" : {
+        "snippet" : "FAQ",
+        "questions" : {
+            "question1" : {
+                "title" : "Qu'est-ce que Notion ?",
+                "snippet": "Notion est un espace de travail virtuel qui s'adapte à vos besoins. De la prise de notes à la gestion de projets, vous trouverez un modèle sur mesure.\nCliquez sur un bloc et faites-le glisser là où vous le souhaitez! Vous êtes en contrôle."
+            },
+            "question2" : {
+                "title" : "Est-ce que Notion est gratuit ?",
+                "snippet" : "Oui, tout à fait! Vous êtes en mesure d'accéder à tous nos modèles gratuits et payants depuis votre propre espace de travail, et ce, même avec l'abonnement gratuit."
+            },
+            "question3" : {
+                "title" : "Pourquoi utiliser un modèle Notion ?",
+                "snippet" : "Les modèles Notion vous économisent temps et énergie.\nNous concevons les outils et l'espace de travail, vous vous mettez au boulot sur ce qui compte vraiment."
+            },
+            "question4" : {
+                "title" : "Comment puis-je accéder à un modèle Notion ?",
+                "snippet" : "Suite à votre achat, nous vous ferons suivre un lien d'accès. Cliquez-le et sélectionnez l'option en haut à droite du modèle. Vous trouverez tous les modèles dupliqués dans la section privée de votre barre latérale."
+            },
+            "question5" : {
+                "title" : "Puis-je partager le lien d'accès du modèle Notion avec un ami?",
+                "snippet" : "Le lien d'accès du modèle Notion ne peut être accédé que par vous."
+            }
+        }
+    },
+    "threeBuySteps" : {
+        "title" : "Mode d'emploi",
+        "description" : "Initiez-vous à Notion sans devoir partir de zéro",
+        "steps" : {
+            "step_one" : {
+                "snippet" : "Élisez un modèle",
+                "instruction" : "Parcourez notre boutique pour un modèle qui convient à vos besoins."
+            },
+            "step_two" : {
+                "snippet" : "Passez à la caisse",
+                "instruction" : "Vous recevrez un reçu par courriel. Tout est sécurisé par la boutique Gumroad"
+            },
+            "step_three" : {
+                "snippet" : "Dupliquez vers Notion",
+                "instruction" : "Ouvrez le lien du courriel, dupliquez le modèle vers votre espace Notion personnel."
+            }
+        },
+        "CTA" : "Parcourir les modèles"
+    },
+    "operations" : {
+        "filter" : {
+            "all" : "Tout",
+            "free" : "Gratuit",
+            "premium" : "Premium",
+            "popular" : "Populaire",
+            "student" : "Étudiant",
+            "personal" : "Personnel",
+            "small_business" : "PME"
+        },
+        "sort" : {
+            "default" : "Trier",
+            "nameAZ" : "Trier par nom (A-Z)",
+            "nameZA" : "Trier par nom (Z-A)",
+            "price_asc" : "Trier par prix (moins cher)",
+            "price_des" : "Trier par prix (plus cher)"
+        }
+    },
+    "features" : {
+        "feature_1" : {
+            "title" : "Collaboration",
+            "text" : "Coordonnez votre équipe sur un espace de travail Notion partagé."
+        },
+        "feature_2" : {
+            "title" : "Expérience multiplateforme",
+            "text" : "Tous nos modèles sont conçus en amont pour une expérience mobile, tablette et PC."
+        },
+        "feature_3" : {
+            "title" : "Compatible avec",
+            "text" : "(Google Calendar logo) + (Google Drive logo) + (Gmail logo)"
+        }
+    },
+    "templates" : {
+        "title" : "Modèles Notion faciles"
+    },
+    "about" : {
+        "title" : "À propos",
+        "snippet" : "Chez Notion Made Easy, nous donnons à ceux en recherche de productivité les moyens d'utiliser des outils efficaces et facile d'utilisation.",
+        "contact_us" : "Pour toute question, vous pouvez nous contacter à l'adresse <1>notionmadeeasy.info@gmail.com</1>"
+    },
+    "products" : {
+        "not_found" : "Aucun produit trouvé." 
+    },
+    "page404" : {
+        "heading" : "La page que vous cherchez n'a pas pu être trouvée.",
+        "back" : "Retour"
+    },
+    "footer" : {
+        "copyright" : "© Notion made easy. {{year}}. Tous droits réservés. Politique de confidentialité.",
+        "sections" : {
+            "community" : {
+                "title" : "Communauté",
+                "link_1" : "Discord",
+                "link_2" : "Affiliate Program"
+
+            },
+            "pages" : {
+                "title" : "Pages",
+                "link_1" : "Modèles",
+                "link_2" : "À propos",
+                "link_3" : "Blog"
+            },
+            "info" : {
+                "title" : "Info",
+                "link_1" : "FAQ",
+                "link_2" : "Contactez-nous",
+                "link_3" : "Politique de confidentialité"
+            }
+        }
+    }
+}
