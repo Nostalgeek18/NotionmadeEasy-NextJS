@@ -1,5 +1,6 @@
+"use client";
 import React, { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import TagManager from 'react-gtm-module';
 
 import * as styled from './style';
@@ -23,7 +24,7 @@ export default function ThreeSteps() {
       }
     });
 
-    router.push(`/${language}/templates`);
+    router.push(`${language}/templates`);
   }
 
   function handleMouseEvent(event) {

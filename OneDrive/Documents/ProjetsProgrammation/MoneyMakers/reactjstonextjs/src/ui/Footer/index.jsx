@@ -1,3 +1,5 @@
+"use client";
+
 import TagManager from 'react-gtm-module';
 import { useLanguage } from '../../context/LanguageContext';
 import LangSelector from '../../features/LangSelector/LangSelector';
@@ -72,7 +74,7 @@ export default function Footer() {
         </styled.SectionsWrapper>
       </styled.MainSectionWrapper>
       <styled.CopyRightWrapper>
-        {t('footer.copyright', { year: currentYear })}
+        {t('footer.copyright')}
       </styled.CopyRightWrapper>
     </styled.FooterWrapper>
   );

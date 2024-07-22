@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineGlobal } from "react-icons/ai";
-import { useLanguage } from '../../context/LanguageContext';
+import { useLanguage } from '@/context/LanguageContext';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -47,25 +47,24 @@ export default function LangSelector() {
 
 
   return (
-    "langSelector"
-    // <div className="dropdown">
-    //     <button className="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    //         <styled.Flag src={`https://flagcdn.com/${currentCountryCode}.svg`} alt={`flag-${currentCountryCode}`} />
-    //     </button>
-    //     <ul className="dropdown-menu">
-    //     {orderedLanguages.map(({code, name, country_code}) => (
-    //             <li key={country_code}>
-    //                 <button 
-    //                 className="dropdown-item p-3" 
-    //                 onClick={()=> changeLanguage(code)}
-    //                 disabled={code === currentLanguageCode}
-    //                 >
-    //                     <span style={{opacity : code === currentLanguageCode ? 0.5 : 1}} className={`flag-icon flag-icon-${country_code} mx-2`}></span>
-    //                     {name}
-    //                 </button>
-    //             </li>
-    //         ))}
-    //     </ul>
-    // </div>
+    <div className="dropdown">
+        <button className="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <styled.Flag src={`https://flagcdn.com/${currentCountryCode}.svg`} alt={`flag-${currentCountryCode}`} />
+        </button>
+        <ul className="dropdown-menu">
+        {orderedLanguages.map(({code, name, country_code}) => (
+                <li key={country_code}>
+                    <button 
+                    className="dropdown-item p-3" 
+                    onClick={()=> changeLanguage(code)}
+                    disabled={code === currentLanguageCode}
+                    >
+                        <span style={{opacity : code === currentLanguageCode ? 0.5 : 1}} className={`flag-icon flag-icon-${country_code} mx-2`}></span>
+                        {name}
+                    </button>
+                </li>
+            ))}
+        </ul>
+    </div>
   )
 }

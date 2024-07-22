@@ -1,0 +1,19 @@
+{
+    "home": "Bienvenue sur le site react",
+    "header" : {
+        "home" : "Inicio",
+        "templates" : "Modelos",
+        "blog" : "Blog",
+        "about" : "Acerca de",
+        "learn_notion" : "Aprender Notion"
+    },
+    "FAQ" : {
+        "snippet" : "Frequently Asked Questions",
+        "questions" : {
+            "question1" : {
+                "title" : "What is Notion ?",
+                "snippet" : "Notion is a highly customizable digital note-taking app for personal or professional use.Add a quick note, follow recipes on your tablet or even manage a team working remotely with user-friendly and efficient workspaces.Click-and-drag any block to your liking. Your Notion workspace is your own sandbox!"
+            }
+        }
+    }
+}

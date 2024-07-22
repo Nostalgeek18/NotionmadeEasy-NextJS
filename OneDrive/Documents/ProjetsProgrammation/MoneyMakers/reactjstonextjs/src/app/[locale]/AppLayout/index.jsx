@@ -20,24 +20,25 @@ const queryClient = new QueryClient({
 });
 
 const Layout = ({ children }) => {
-  console.log('INSIDE UI FOLDER')
+  console.log('INSIDE LOCALE')
   return (
-    <QueryClientProvider client={queryClient}>
-      <HelmetProvider>
-        <DarkModeProvider>
-          {/* <LanguageProvider> */}
-            <GlobalStyles />
-            <styled.AppLayout>
-              {/* <Header /> */}
-              <styled.WrapperOutlet>
-                {children}
-              </styled.WrapperOutlet>
-              {/* <Footer /> */}
-            </styled.AppLayout>
-          {/* </LanguageProvider> */}
-        </DarkModeProvider>
-      </HelmetProvider>
-    </QueryClientProvider>
+    children
+    // <QueryClientProvider client={queryClient}>
+    //   <HelmetProvider>
+    //     <DarkModeProvider>
+    //       <LanguageProvider>
+    //         <GlobalStyles />
+    //         <styled.AppLayout>
+    //           <Header />
+    //           <styled.WrapperOutlet>
+    //             {children}
+    //           </styled.WrapperOutlet>
+    //           <Footer />
+    //         </styled.AppLayout>
+    //       </LanguageProvider>
+    //     </DarkModeProvider>
+    //   </HelmetProvider>
+    // </QueryClientProvider>
   );
 };
 

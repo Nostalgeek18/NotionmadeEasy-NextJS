@@ -1,7 +1,8 @@
+"use client";
 import { useContext, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import TagManager from 'react-gtm-module';
 
 import LangSelector from '../../features/LangSelector/LangSelector';

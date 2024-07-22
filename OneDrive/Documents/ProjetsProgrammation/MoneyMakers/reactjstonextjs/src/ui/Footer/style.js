@@ -118,7 +118,7 @@ export const SectionName = styled.div`
   font-size: 20px;
 `
 
-export const LinkPage = styled.a`
+export const LinkPage = styled.div`
   color: var(--color-grey-400);
   font-size: 18px;
   cursor: hover;

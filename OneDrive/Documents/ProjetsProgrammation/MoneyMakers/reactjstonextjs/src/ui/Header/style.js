@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import {styled, css } from "styled-components";
 
 
 export const Header = styled.header`
@@ -34,7 +34,7 @@ export const LinkWrapper = styled.li`
 
 `
 
-export const HeaderLink = styled.a`
+export const HeaderLink = styled.div`
   padding: 2.2rem 3rem;
   display: inline-block;
   font-size: 1.6rem;

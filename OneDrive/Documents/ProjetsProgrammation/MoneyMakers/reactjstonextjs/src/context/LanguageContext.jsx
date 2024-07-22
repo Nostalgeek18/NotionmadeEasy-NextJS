@@ -1,17 +1,27 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { useTranslation, Trans } from 'react-i18next';
+"use client";
+import React, { createContext, useState, useContext, useEffect, useTransition, startTransition } from 'react';
+import { useRouter } from 'next/navigation';
+import { NextIntlProvider, useIntl, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import TagManager from 'react-gtm-module';
 
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const { t, i18n } = useTranslation();
-  const [language, setLanguage] = useState(i18n.language);
+
+  const [isPending, startTransition] = useTransition();
   const router = useRouter();
+  const t = useTranslations('');
+  const localActive = useLocale();
+  const [language, setLanguage] = useState(localActive);
+
+  // const [language, setLanguage] = useState(intl.locale);
 
   const changeLanguage = (lng) => {
-    setLanguage(lng);
+    console.log('changing language to : ', lng);
+    startTransition(() => {
+      router.replace(`/${lng}`)
+    })
     TagManager.dataLayer({
       dataLayer: {
         event: 'click_language',
@@ -20,16 +30,13 @@ export const LanguageProvider = ({ children }) => {
       },
     });
 
-    const newPathName = router.asPath.replace(/^\/(en|fr|es|de)/, `/${lng}`);
-    router.push(newPathName);
+    // const newPathName = router.asPath.replace(/^\/(en|fr|es|de)/, `/${lng}`);
+    // router.push(newPathName);
   };
 
-  useEffect(() => {
-    i18n.changeLanguage(language);
-  }, [language, i18n]);
-
+  const Trans = 'EMPTY VALUE FOR NOW, HAS TO FIND EQUIVALANT IN NEXT.JS'
   return (
-    <LanguageContext.Provider value={{ language, changeLanguage, t, Trans }}>
+    <LanguageContext.Provider value={{changeLanguage, t, Trans, language }}>
       {children}
     </LanguageContext.Provider>
   );

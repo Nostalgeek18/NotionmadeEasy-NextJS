@@ -1,0 +1,154 @@
+{   
+    "pages" : {
+        "homepage" : {
+            "title" : "Notion made easy | Notion templates for productivity",
+            "description" : "Notion is the all-in-one productivity app for task management and note-taking. Organize your life our  dashboard templates."
+        },
+        "templates" : {
+            "title" : "Notion made easy | Notion templates gallery",
+            "description" : "You like Notion, but don’t have time or energy to build an entire workspace from scratch? Try our pre-built templates for your personal & student life."
+        },
+        "about" : {
+            "title": "Notion made easy | About us",
+            "description" : "Contact us for any inquiries or to request a feature. "
+        },
+        "privacy" : {
+            "title": "Notion made easy | Privacy policy",
+            "description" : "At Notion Made Easy, we empower productivity seekers with user-friendly and efficient tools."
+        },
+        "faq" : {
+            "title": "Notion made easy | FAQ",
+            "description" : "At Notion Made Easy, we empower productivity seekers with user-friendly and efficient tools."
+        }
+    },
+    "header" : {
+        "home" : "Home",
+        "templates" : "Templates",
+        "blog" : "Blog",
+        "about" : "About",
+        "learn_notion" : "Learn Notion"
+    },
+    "homepage" : {
+        "introduction" : {
+            "title" : "Productivity starts today",
+            "subtitle" : "Discover ready-to-use Notion templates to help you get organized.",
+            "CTA_templates" : "Notion templates",
+            "CTA_work_with_us" : "Work with us",
+            "trusted_by" : "Notion is trusted by the most productive companies"
+        }
+    }, 
+    "FAQ" : {
+        "snippet" : "Frequently Asked Questions",
+        "questions" : {
+            "question1" : {
+                "title" : "What is Notion ?",
+                "snippet": "Notion is a highly customizable digital note-taking app for personal or professional use.\nAdd a quick note, follow recipes on your tablet or even manage a team working remotely with user-friendly and efficient workspaces.\nClick-and-drag any block to your liking. Your Notion workspace is your own sandbox!"
+            },
+            "question2" : {
+                "title" : "Is Notion free ?",
+                "snippet" : "Yes, indeed! You may duplicate all of our free or paid templates into your own private workspace with the free plan."
+            },
+            "question3" : {
+                "title" : "Why use Notion templates ?",
+                "snippet" : "Notion templates saves you time and energy.\nWe take care of the workspace design part, so you can get some actual work done."
+            },
+            "question4" : {
+                "title" : "How can I access a Notion template ?",
+                "snippet" : "After you check out your purchase, we’ll send you an access link. Click it and select the “Duplicate” option on the top right corner of the template. You will find all duplicated templates in the “Private” section of your sidebar."
+            },
+            "question5" : {
+                "title" : "Can I share the Notion template link with a friend?",
+                "snippet" : "The template link sent by e-mail may only be accessed by you."
+            }
+        }
+    },
+    "threeBuySteps" : {
+        "title" : "How it works",
+        "description" : "Start using Notion without having to set it up from scratch",
+        "steps" : {
+            "step_one" : {
+                "snippet" : "Pick a template",
+                "instruction" : "Browse and search for a template that fits your needs."
+            },
+            "step_two" : {
+                "snippet" : "Checkout securely",
+                "instruction" : "Put your email to receive a receipt and complete your purchase."
+            },
+            "step_three" : {
+                "snippet" : "Duplicate to Notion",
+                "instruction" : "Open the template link and duplicate it to your Notion account."
+            }
+        },
+        "CTA" : "Browse templates"
+    },
+    "operations" : {
+        "filter" : {
+            "all" : "All",
+            "free" : "Free",
+            "premium" : "Premium",
+            "popular" : "Popular",
+            "student" : "Student",
+            "personal" : "Personal",
+            "small_business" : "Small business"
+        },
+        "sort" : {
+            "default" : "Sort",
+            "nameAZ" : "Sort by name (A-Z)",
+            "nameZA" : "Sort by name (Z-A)",
+            "price_asc" : "Sort by price (low first)",
+            "price_des" : "Sort by price (high first)"
+        }
+    },
+    "features" : {
+        "feature_1" : {
+            "title" : "Collaboration",
+            "text" : "Manage your team remotely with a shared Notion workspace"
+        },
+        "feature_2" : {
+            "title" : "Cross-platform experience",
+            "text" : "All of our template designs are compatible with mobile, tablet and desktop"
+        },
+        "feature_3" : {
+            "title" : "Compatible with",
+            "text" : "(Google Calendar logo) + (Google Drive logo) + (Gmail logo)"
+        }
+    },
+    "templates" : {
+        "title" : "Easy notion templates"
+    },
+    "about" : {
+        "title" : "About us",
+        "snippet" : "At Notion Made Easy, we empower productivity seekers with user-friendly and efficient tools.",
+        "contact_us" : "For any inquiries, you may contact us at <1>notionmadeeasy.info@gmail.com</1>"
+    },
+    "products" : {
+        "not_found" : "No products could be found."
+    },
+    "page404" : {
+        "heading" : "The page you are looking for could not be found.",
+        "back" : "Go back"
+    },
+    "footer" : {
+        "copyright" : "© Notion made easy. 2024. All rights reserved. Privacy Policy.",
+        "sections" : {
+            "community" : {
+                "title" : "Community",
+                "link_1" : "Discord",
+                "link_2" : "Affiliate Program"
+
+            },
+            "pages" : {
+                "title" : "Pages",
+                "link_1" : "Templates",
+                "link_2" : "About",
+                "link_3" : "Blog"
+            },
+            "info" : {
+                "title" : "Info",
+                "link_1" : "FAQ",
+                "link_2" : "Contact Us",
+                "link_3" : "Privacy Policy"
+            }
+        }
+    }
+}

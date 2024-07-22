@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const StyledLink = styled.a`
+export const StyledLink = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
