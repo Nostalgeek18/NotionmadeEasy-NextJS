@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState } from 'react'
 import { AiOutlineGlobal } from "react-icons/ai";
 import { useLanguage } from '@/context/LanguageContext';
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,8 +9,14 @@ import * as styled from './style'
 export default function LangSelector() {
 
 
+  const [dropdownOpen, setDropdownOpen] = useState(false);
     const { changeLanguage, language : currentLanguageCode } = useLanguage()
 
+
+    const toggleDropdown = () => {
+      console.log('dropdownOpen is : ', dropdownOpen);
+      setDropdownOpen(!dropdownOpen);
+  };
 
     const languages = [
         {
@@ -47,24 +53,23 @@ export default function LangSelector() {
 
 
   return (
-    <div className="dropdown">
-        <button className="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <styled.Flag src={`https://flagcdn.com/${currentCountryCode}.svg`} alt={`flag-${currentCountryCode}`} />
-        </button>
-        <ul className="dropdown-menu">
-        {orderedLanguages.map(({code, name, country_code}) => (
-                <li key={country_code}>
-                    <button 
-                    className="dropdown-item p-3" 
-                    onClick={()=> changeLanguage(code)}
-                    disabled={code === currentLanguageCode}
-                    >
-                        <span style={{opacity : code === currentLanguageCode ? 0.5 : 1}} className={`flag-icon flag-icon-${country_code} mx-2`}></span>
-                        {name}
-                    </button>
-                </li>
-            ))}
-        </ul>
-    </div>
+    <styled.Dropdown>
+            <styled.Button onClick={toggleDropdown}>
+                <styled.Flag src={`https://flagcdn.com/${currentCountryCode}.svg`} alt={`flag-${currentCountryCode}`} />
+            </styled.Button>
+            <styled.DropdownMenu $isOpen={dropdownOpen} >
+                {orderedLanguages.map(({ code, name, country_code }) => (
+                    <li key={country_code}>
+                        <styled.DropdownItem
+                            onClick={() => changeLanguage(code)}
+                            disabled={code === currentLanguageCode}
+                        >
+                            <styled.FlagIcon src={`https://flagcdn.com/${country_code}.svg`} alt={`flag-${country_code}`} opacity={code === currentLanguageCode ? 0.5 : 1} />
+                            {name}
+                        </styled.DropdownItem>
+                    </li>
+                ))}
+            </styled.DropdownMenu>
+      </styled.Dropdown>
   )
 }
