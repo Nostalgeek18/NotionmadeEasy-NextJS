@@ -1,11 +1,12 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import { useSearchParams } from 'next/navigation';
 import Select from '../Select';
 
 export default function SortBy({ options }) {
-  const router = useRouter();
-  const { query } = router;
-  const sortBy = query.sortBy || "";
+
+  const searchParams = useSearchParams();
+  const sortBy = searchParams.get('sortBy') || "";
 
   function handleChange(e) {
     const newQuery = { ...query };

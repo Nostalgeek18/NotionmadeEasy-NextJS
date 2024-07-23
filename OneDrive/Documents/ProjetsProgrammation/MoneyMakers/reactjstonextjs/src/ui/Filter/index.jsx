@@ -1,12 +1,25 @@
-import React from 'react';
-import { useRouter } from 'next/router';
+import React, { useCallback } from 'react';
+import { usePathname, useSearchParams } from 'next/navigation';
 import TagManager from 'react-gtm-module';
 import * as styled from './style';
+import { useRouter } from 'next/navigation';
 
 function Filter({ filterField, options }) {
   const router = useRouter();
-  const { query } = router;
-  const currentFilter = query[filterField] || options[0].value;
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const currentFilter = searchParams.get(filterField) || options[0].value;
+
+  // Get a new searchParams string by merging the current
+  // searchParams with a provided key/value pair
+  const createQueryString = useCallback(
+    (name, value) => {
+      const params = new URLSearchParams(searchParams.toString());
+      params.set(name, value);
+      return params.toString();
+    },
+    [searchParams]
+  );
 
   function handleClick(value) {
     // Push event to GTM
@@ -18,20 +31,7 @@ function Filter({ filterField, options }) {
       },
     });
 
-    // Update query parameters
-    const newQuery = {
-      ...query,
-      [filterField]: value,
-    };
-
-    if (query.page) {
-      newQuery.page = 1;
-    }
-
-    router.push({
-      pathname: router.pathname,
-      query: newQuery,
-    }, undefined, { shallow: true });
+    router.push(pathname + '?' + createQueryString(filterField, value));
   }
 
   return (

@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 
 import * as styled from './style'
@@ -5,13 +6,13 @@ import Filter from '../../ui/Filter'
 import SortBy from '../../ui/SortBy'
 import { useLanguage } from '../../context/LanguageContext'
 
-export default function BundleOperations() {
+export default function BundleOperations({field}) {
 
     const { t } = useLanguage();
 
     return (
       <styled.WrapperOperations>
-          <Filter filterField='discount' options={[
+          <Filter filterField={field} options={[
               {value : 'all', label : t('operations.filter.all')},
               {value : 'free' , label : t('operations.filter.free')},
               {value : 'popular' , label : t('operations.filter.popular')},
