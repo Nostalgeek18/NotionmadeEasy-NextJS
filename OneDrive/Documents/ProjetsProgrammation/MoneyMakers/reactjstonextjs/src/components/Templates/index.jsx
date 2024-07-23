@@ -30,7 +30,7 @@ export default function TemplatesPage() {
         </Helmet> */}
         <styled.TemplatesTitle>{t('templates.title', 'Easy notion templates')}</styled.TemplatesTitle>
         <BundleOperations field={field} />
-        {/* <Products /> */}
+        <Products field={field}/>
         {/* <BundlesOffers /> */}
     </>
   )

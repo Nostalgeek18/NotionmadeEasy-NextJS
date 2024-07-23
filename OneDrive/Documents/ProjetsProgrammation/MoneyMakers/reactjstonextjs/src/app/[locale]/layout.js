@@ -1,5 +1,6 @@
 import { NextIntlClientProvider, useMessages } from 'next-intl';
-import AppLayout from "./AppLayout";
+
+import QueryClientProviderWrapper from '@/components/QueryClientProviderWrapper';
 import Header from '@/ui/Header';
 import Footer from '@/ui/Footer';
 import OutletWrapper from '@/ui/OutletWrapper';
@@ -74,7 +75,9 @@ export default function RootLayout({
             <LanguageProvider>
               <Header/>
               <OutletWrapper>
-                {children}
+                <QueryClientProviderWrapper>
+                  {children}
+                </QueryClientProviderWrapper>
               </OutletWrapper>
               <Footer />
             </LanguageProvider>
